@@ -158,7 +158,7 @@ export function SideBar(props: { className?: string }) {
           ChatGPT WebUI
         </div>
         <div className={styles["sidebar-sub-title"]}>
-          Build your own AI assistant.
+          在线版 ChatGPT
         </div>
         <div className={styles["sidebar-logo"] + " no-dark"}>
           <ChatGptIcon />
