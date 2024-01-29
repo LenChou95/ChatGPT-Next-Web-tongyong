@@ -2,7 +2,7 @@
 
 > No english version yet, please read this doc with ChatGPT or other translation tools.
 
-本文档用于解释 NextChat 的部分功能介绍和设计原则。
+本文档用于解释 ChatGPT WebUI 的部分功能介绍和设计原则。
 
 ## GPTs (Mask)
 
@@ -22,7 +22,7 @@ GPTs = 多个预设提示词 + 模型设置 + 对话设置。
 
 编辑步骤如下：
 
-1. 在 NextChat 中配置好一个GPTs；
+1. 在 ChatGPT WebUI 中配置好一个GPTs；
 2. 使用GPTs编辑页面的下载按钮，将GPTs保存为 JSON 格式；
 3. 让 ChatGPT 帮你将 json 文件格式化为对应的 ts 代码；
 4. 放入对应的 .ts 文件。
