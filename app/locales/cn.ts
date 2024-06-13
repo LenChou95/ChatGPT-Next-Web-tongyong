@@ -45,7 +45,7 @@ const cn = {
     },
     Commands: {
       new: "新建聊天",
-      newm: "从GPTs新建聊天",
+      newm: "从面具新建聊天",
       next: "下一个聊天",
       prev: "上一个聊天",
       clear: "清除上下文",
@@ -60,9 +60,10 @@ const cn = {
         dark: "深色模式",
       },
       Prompt: "快捷指令",
-      Masks: "所有GPTs",
+      Masks: "所有面具",
       Clear: "清除聊天",
       Settings: "对话设置",
+      UploadImage: "上传图片",
     },
     Rename: "重命名对话",
     Typing: "正在输入…",
@@ -76,7 +77,7 @@ const cn = {
     Send: "发送",
     Config: {
       Reset: "清除记忆",
-      SaveAs: "存为GPTs",
+      SaveAs: "存为面具",
     },
     IsContext: "预设提示词",
   },
@@ -92,8 +93,8 @@ const cn = {
       SubTitle: "可以导出 Markdown 文本或者 PNG 图片",
     },
     IncludeContext: {
-      Title: "包含GPTs上下文",
-      SubTitle: "是否在消息中展示GPTs上下文",
+      Title: "包含面具上下文",
+      SubTitle: "是否在消息中展示面具上下文",
     },
     Steps: {
       Select: "选取",
@@ -218,18 +219,18 @@ const cn = {
 
       LocalState: "本地数据",
       Overview: (overview: any) => {
-        return `${overview.chat} 次对话，${overview.message} 条消息，${overview.prompt} 条提示词，${overview.mask} 个GPTs`;
+        return `${overview.chat} 次对话，${overview.message} 条消息，${overview.prompt} 条提示词，${overview.mask} 个面具`;
       },
       ImportFailed: "导入失败",
     },
     Mask: {
       Splash: {
-        Title: "GPTs启动页",
-        SubTitle: "新建聊天时，展示GPTs启动页",
+        Title: "面具启动页",
+        SubTitle: "新建聊天时，展示面具启动页",
       },
       Builtin: {
-        Title: "隐藏内置GPTs",
-        SubTitle: "在所有GPTs列表中隐藏内置GPTs",
+        Title: "隐藏内置面具",
+        SubTitle: "在所有面具列表中隐藏内置面具",
       },
     },
     Prompt: {
@@ -312,21 +313,38 @@ const cn = {
           SubTitle: "选择指定的部分版本",
         },
       },
-      Google: {
+      Anthropic: {
         ApiKey: {
           Title: "接口密钥",
-          SubTitle: "使用自定义 Google AI Studio API Key 绕过密码访问限制",
-          Placeholder: "Google AI Studio API Key",
+          SubTitle: "使用自定义 Anthropic Key 绕过密码访问限制",
+          Placeholder: "Anthropic API Key",
         },
 
         Endpoint: {
           Title: "接口地址",
-          SubTitle: "不包含请求路径，样例：",
+          SubTitle: "样例：",
         },
 
         ApiVerion: {
-          Title: "接口版本 (gemini-pro api version)",
-          SubTitle: "选择指定的部分版本",
+          Title: "接口版本 (claude api version)",
+          SubTitle: "选择一个特定的 API 版本输入",
+        },
+      },
+      Google: {
+        ApiKey: {
+          Title: "API 密钥",
+          SubTitle: "从 Google AI 获取您的 API 密钥",
+          Placeholder: "输入您的 Google AI Studio API 密钥",
+        },
+
+        Endpoint: {
+          Title: "终端地址",
+          SubTitle: "示例：",
+        },
+
+        ApiVersion: {
+          Title: "API 版本（仅适用于 gemini-pro）",
+          SubTitle: "选择一个特定的 API 版本",
         },
       },
       CustomModel: {
@@ -391,11 +409,11 @@ const cn = {
     Sysmessage: "你是一个助手",
   },
   Mask: {
-    Name: "GPTs",
+    Name: "面具",
     Page: {
-      Title: "预设角色GPTs",
+      Title: "预设角色面具",
       SubTitle: (count: number) => `${count} 个预设角色定义`,
-      Search: "搜索 GPTs",
+      Search: "搜索角色面具",
       Create: "新建",
     },
     Item: {
@@ -408,7 +426,7 @@ const cn = {
     },
     EditModal: {
       Title: (readonly: boolean) =>
-        `编辑预设GPTs ${readonly ? "（只读）" : ""}`,
+        `编辑预设面具 ${readonly ? "（只读）" : ""}`,
       Download: "下载预设",
       Clone: "克隆预设",
     },
@@ -425,8 +443,8 @@ const cn = {
         SubTitle: "隐藏后预设对话不会出现在聊天界面",
       },
       Share: {
-        Title: "分享此GPTs",
-        SubTitle: "生成此GPTs的直达链接",
+        Title: "分享此面具",
+        SubTitle: "生成此面具的直达链接",
         Action: "复制链接",
       },
     },
@@ -436,8 +454,8 @@ const cn = {
     Skip: "直接开始",
     NotShow: "不再展示",
     ConfirmNoShow: "确认禁用？禁用后可以随时在设置中重新启用。",
-    Title: "挑选一个GPTs",
-    SubTitle: "现在开始，与GPTs背后的灵魂思维碰撞",
+    Title: "挑选一个面具",
+    SubTitle: "现在开始，与面具背后的灵魂思维碰撞",
     More: "查看全部",
   },
 

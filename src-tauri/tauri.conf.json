@@ -8,8 +8,8 @@
     "withGlobalTauri": true
   },
   "package": {
-    "productName": "ChatGPT WebUI",
-    "version": "2.10.1"
+    "productName": "NextChat",
+    "version": "2.12.3"
   },
   "tauri": {
     "allowlist": {
@@ -68,7 +68,7 @@
         "icons/icon.ico"
       ],
       "identifier": "com.yida.chatgpt.next.web",
-      "longDescription": "ChatGPT WebUI is a cross-platform ChatGPT client, including Web/Win/Linux/OSX/PWA.",
+      "longDescription": "NextChat is a cross-platform ChatGPT client, including Web/Win/Linux/OSX/PWA.",
       "macOS": {
         "entitlements": null,
         "exceptionDomain": "",
@@ -77,7 +77,7 @@
         "signingIdentity": null
       },
       "resources": [],
-      "shortDescription": "ChatGPT WebUI App",
+      "shortDescription": "NextChat App",
       "targets": "all",
       "windows": {
         "certificateThumbprint": null,
@@ -86,12 +86,13 @@
       }
     },
     "security": {
-      "csp": null
+      "csp": null,
+      "dangerousUseHttpScheme": true
     },
     "updater": {
       "active": true,
       "endpoints": [
-        "https://github.com/Yidadaa/ChatGPT-Next-Web/releases/latest/download/latest.json"
+        "https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web/releases/latest/download/latest.json"
       ],
       "dialog": false,
       "windows": {
@@ -104,7 +105,7 @@
         "fullscreen": false,
         "height": 600,
         "resizable": true,
-        "title": "ChatGPT WebUI",
+        "title": "NextChat",
         "width": 960,
         "hiddenTitle": true,
         "titleBarStyle": "Overlay"

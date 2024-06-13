@@ -1,6 +1,6 @@
 {
-  "name": "ChatGPT WebUI",
-  "short_name": "ChatGPT WebUI",
+  "name": "NextChat",
+  "short_name": "NextChat",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
